@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-klase</title>
+    <link href="./styles/index9-style.css" rel="stylesheet">
+</head>
+<body>
+    <h2><div>:first-child</h2>
+        Svaki div element koji je <b>prvi</b> element na svom hijerarhijskom nivou.
+        <section class="fc">
+<div>Prvi div blok u sekciji</div>
+<div>Drugi div blok
+    <p>Prvi pargraf unutar drugog bloka</p>
+    <div>prvi div blok unutar drugog</div>
+    </div>
+    <div>Ttreći div blok
+    <div>Prvi div blok unutar trećeg</div>
+    <div>Drugi div blok unutar trećeg</div>
+</div>
+        </section>
+<hr><br><hr>
+    <h2>div:nth-child(odd)</h2>
+    Svaki div element koji je na <b>neparnoj</b> poziciji na svomm nivou.
+    <section class="nth1">
+    <div>Prvi div blok</div>
+    <div>Drugi div blok</div>
+    <p>Umetnut paragraf</p>
+    <div>Treći div blok</div>
+    <div>Četvrti div blok</div>
+    <div>Peti div blok</div>
+    </section>
+<br><hr><br>
+<h2>*:nth-child(-n+3)</h2>
+Bilo koja <b>prva tri elemnta</b> na nivou.
+<section class="nth2">
+<div>Prvi div blok u sekciji</div>
+<div>Drugi div blok</div>
+<p>Umetnut paragraf</p>
+<div>Treći div blok</div>
+<div>Četvrti div blok</div>
+<div>Peti div blok</div>
+</section>
+
+<br><hr><br>
+<h2>div:first-oftype</h2>
+Svaki div element, <b>Ako je prvi</b> od div-ova na svom hijerarhijskom nivou.
+<section class="fot">
+    <div>Prvi div blok u sekciji</div>
+    <div>Drugi div blok</div>
+    <p>Umetnut parafraf</p>
+    <div>Treći div blok
+        <p>Paragraf unutar trećeg bloka</p>
+        <div>Prvi div u trećem bloku</div>
+        <div>Drugi div u trećem bloku</div>
+        </div>
+        <div>Četvrti div blok</div>
+        <div>Peti div blok</div>
+</section>
+<br><hr><br>
+
+<h2>*:only-of-type</h2>
+Svaki element <b>koji je jedini</b> (jedini paragraf, jedini div...) na svom hijerarhijskom nivou.
+<section class="oot">
+    <div>Prvi div blok u sekciji</div>
+    <div>Drugi div blok</div>
+    <p>Jedini paragraf u velikom bloku</p>
+    <div>Treći div blok
+    <p>Paragraf unutar trećeg bloka</p>
+    <div>Jedini div u trećem bloku</div>
+    <p>Drugi paragraf u trćem boku</p>
+</div>
+<div>Četvrti div blok</div>
+<div>Peti div blok</div>
+</section>
+<br><hr><br>
+
+<h2>div:nth-last-of-type(2)</h2>
+<b>Pretposljednji</b> div od svih div elemenata na svom hijerarhijskom nivou.
+<section clas="nthl">
+    <div>Prvi div blok u sekciji</div>
+    <div>Drugi div blok</div>
+    <p> Jedini paragraf u velikom bloku</p>
+    <div>Treći div blok
+        <p>Paragraf unutar trećeg bloka</p>
+        <div>jedini div u trećem bloku</div>
+        <p>Drugi paragraf u trećem bloku</p>
+        </div>
+        <div>Četvrti div blok</div>
+        <p>Paragraf je pretposljednji element</p>
+        <div>Peti div blok</div>
+        </section>
+        <br><hr><br>
+        <h2>div.kk:nth-of-type(odd)</h2>
+        Svaki <b>Neparni</b> od div blokova na istom nivou, ali <b>samo ako je klase kk</b>
+        <section class="ntt">
+            <div class="kk">Prvi div blok u sekciji klase kk</div>
+            <div class="kk">Drugi div blok klase kk</div>
+            <p>Paragraf u sekciji</p>
+            <div>Treći div blok</div>
+            <div class="kk">Četvrti div blok klase kk</div>
+            <p class="kk">Paragraf klase kk</p>
+            <div class="kk">Peti div blok klase kk</div>
+        </section>
+</body>
+</html>
