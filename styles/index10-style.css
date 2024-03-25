@@ -1,0 +1,47 @@
+.aa p::after{
+    content: "- Zapamti ovo!!";
+    color: red;
+    background-color: yellow;
+}
+.ab p::before{
+    content: "Zapamti ovo -->";
+    color: red;
+    background-color: yellow;
+}
+.bc p::first-letter{
+    color:red;
+    font-size: xx-large;
+}
+h1::first-letter,p::first-letter{
+    color: red;
+    font-size: xx-large;
+}
+p::first-line{
+    background-color: yellow;
+}
+p::first-letter{
+    color: red;
+    font-size: xx-large;
+}
+p::first-line{
+    color: blue;
+    font-variant: small-caps;
+}
+::marker{
+    color: red;
+    font-size: xx-large;
+}
+.geek1{
+    list-style-type: circle;
+}
+.geek2 {
+    list-style-type: lower-roman
+}
+::selection{
+    color: red;
+    background: yellow;
+}
+::selection{
+    color: red;
+    background: yellow;
+}

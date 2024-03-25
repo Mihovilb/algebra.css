@@ -1,0 +1,5 @@
+p::after{
+    content: "- Zapamti ovo!!";
+    color: red;
+    background-color: yellow;
+}

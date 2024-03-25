@@ -1,0 +1,4 @@
+h1::first-letter,p::first-letter{
+    color: red;
+    font-size: xx-large;
+}

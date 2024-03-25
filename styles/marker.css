@@ -1,0 +1,10 @@
+::marker{
+    color: red;
+    font-size: xx-large;
+}
+.geek1{
+    list-style-type: circle;
+}
+.geek2 {
+    list-style-type: lower-roman
+}
