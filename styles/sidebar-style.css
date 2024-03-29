@@ -51,3 +51,7 @@ input[data-function*="swipe"]:checked ~ .sidebar{
 input[data-function*="swipe"]:checked ~ .sidebar .tabs-container {
     width: 100%;
 }
+/*override margin-left on tab-content to be nice */
+.tab-content{
+    margin-left: 60px;
+}
